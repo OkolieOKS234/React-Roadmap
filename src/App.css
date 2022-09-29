@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: #282d35;
+  width: 100%;
+  overflow-x: hidden;
+}
+.navbar {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  background-color: #21222a;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 10vh;
+  padding-top: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  position: -webkit-sticky;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.icon {
+  display: flex;
+}
+.nav_text {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10%;
+}
+
+/* main section */
+section {
+  color: #fff;
+  /* text-align: center; */
+  width: 100%;
+  overflow: hidden;
+}
+.main_text {
+  font-family: cursive;
+  text-align: center;
+  margin-top: 100px;
+
+  letter-spacing: -0.05em;
+}
+/* list items */
+ul,
+li {
+  padding-block: 10px;
+}
+/* li span {
+  position: relative;
+} */
+
+.roadmap_list > li::marker {
+  color: blue;
+  content: "🚀";
+}
+.roadmap_list {
+  /* text-align: center; */
+  /* list-style-type: none; */
+  max-width: 80%;
+  margin-left: 5%;
+  line-height: 20px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* responsive design */
+
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  .navbar {
+    width: 100%;
+    height: 7vh;
+  }
+  .logo {
+    margin-left: 50%;
+  }
+  .nav_text {
+    display: none;
+  }
+  section {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+}
