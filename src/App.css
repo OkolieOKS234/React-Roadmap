@@ -39,6 +39,10 @@ section {
   /* text-align: center; */
   width: 100%;
   overflow: hidden;
+  background-image: url(./assets/react.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 50%;
 }
 .main_text {
   font-family: cursive;
@@ -66,6 +70,13 @@ li {
   max-width: 80%;
   margin-left: 5%;
   line-height: 20px;
+  font-weight: 800;
+  color: whitesmoke;
+}
+.roadmap_list > li:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 /* scrollbar */
@@ -95,5 +106,8 @@ li {
     width: 100%;
     max-width: 100%;
     text-align: left;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 70%;
   }
 }
